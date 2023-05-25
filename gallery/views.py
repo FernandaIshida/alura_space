@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('<h1>Alura Space</h1><p>Welcome to space!</p>')
-
+    return render(request, 'gallery/index.html')
